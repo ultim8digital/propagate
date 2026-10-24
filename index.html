@@ -268,7 +268,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Where it is kept</h3>
     <p>Everything above, except what stays on your device, is stored with Apple in the app’s iCloud CloudKit container. Items other people need to see live in the app’s shared (public) database; your private settings live in your private iCloud database. We run no servers of our own. Apple hosts and protects the data under its own <a href="https://www.apple.com/legal/privacy/" rel="noopener">privacy policy</a>.</p>
-    <p class="note"><strong>Please keep in mind:</strong> offers, messages and trade details are stored in the shared database alongside listings, and they are not end-to-end encrypted. The app only shows them to the people involved, but do not send anything you would not want others to read, such as your home address or bank details.</p>
+    <p class="note">Message text, offer notes, and the meeting place and time are encrypted on your device using the participants’ keys before upload to CloudKit. The private key is stored in iCloud Keychain. Participant IDs and trade metadata remain in the public database. Without your synced key, private content cannot be read and is never sent as plaintext. Reporting sends this selected message to moderators. The rest of the conversation stays private.</p>
   </div>
 
   <div class="block">
@@ -281,7 +281,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>Camera</strong> access is used only when you choose to photograph a plant for a listing.</li>
       <li><strong>Photos</strong> are picked through Apple’s photo picker, so the app receives only the pictures you select. Before upload each photo is resized and its hidden metadata, including any GPS location, is removed.</li>
-      <li><strong>Notifications</strong> are optional. If you allow them, Apple’s push service tells you about new offers, replies, trade updates, messages and reviews. A message notification shows the message text on your lock screen, depending on your device settings.</li>
+      <li>Notifications are optional. They announce new messages and trade updates without including private message text.</li>
     </ul>
   </div>
 
@@ -366,7 +366,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Hvor det opbevares</h3>
     <p>Alt ovenstående, undtagen det, der bliver på din enhed, opbevares hos Apple i appens iCloud CloudKit-container. Det, andre skal kunne se, ligger i appens delte (offentlige) database; dine private indstillinger ligger i din private iCloud-database. Vi har ingen egne servere. Apple hoster og beskytter dataene i henhold til sin egen <a href="https://www.apple.com/legal/privacy/" rel="noopener">privatlivspolitik</a>.</p>
-    <p class="note"><strong>Husk:</strong> tilbud, beskeder og detaljer om bytter gemmes i den delte database sammen med opslagene, og de er ikke end-to-end-krypterede. Appen viser dem kun til de involverede, men send ikke noget, du ikke vil have, at andre læser, som din hjemmeadresse eller dine bankoplysninger.</p>
+    <p class="note">Beskedtekst, tilbudsnoter samt mødested og tidspunkt krypteres på enheden med deltagernes nøgler før upload til CloudKit. Den private nøgle gemmes i iCloud-nøglering. Deltager-id’er og byttets metadata forbliver i den offentlige database. Uden din synkroniserede nøgle er privat indhold utilgængeligt og sendes aldrig i klartekst. Anmeldelsen sender denne besked til moderatorerne. Resten af samtalen forbliver privat.</p>
   </div>
 
   <div class="block">
@@ -379,7 +379,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>Kameraet</strong> bruges kun, når du vælger at fotografere en plante til et opslag.</li>
       <li><strong>Billeder</strong> vælges via Apples billedvælger, så appen kun modtager de billeder, du vælger. Før upload bliver hvert billede formindsket, og dets skjulte metadata, herunder en eventuel GPS-position, fjernes.</li>
-      <li><strong>Notifikationer</strong> er valgfrie. Hvis du tillader dem, giver Apples push-tjeneste dig besked om nye tilbud, svar, opdateringer på bytter, beskeder og anmeldelser. En notifikation om en besked viser beskedens tekst på din låseskærm, afhængigt af indstillingerne på din enhed.</li>
+      <li>Notifikationer er valgfrie. De giver besked om nye beskeder og bytter uden privat beskedtekst.</li>
     </ul>
   </div>
 
@@ -464,7 +464,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Wo die Daten liegen</h3>
     <p>Alles oben Genannte, außer dem, was auf deinem Gerät bleibt, wird bei Apple im iCloud-CloudKit-Container der App gespeichert. Was andere Personen sehen müssen, liegt in der gemeinsamen (öffentlichen) Datenbank der App; deine privaten Einstellungen liegen in deiner privaten iCloud-Datenbank. Wir betreiben keine eigenen Server. Apple hostet und schützt die Daten nach seiner eigenen <a href="https://www.apple.com/legal/privacy/" rel="noopener">Datenschutzrichtlinie</a>.</p>
-    <p class="note"><strong>Bitte beachte:</strong> Angebote, Nachrichten und Tauschdetails werden zusammen mit den Anzeigen in der gemeinsamen Datenbank gespeichert und sind nicht Ende-zu-Ende-verschlüsselt. Die App zeigt sie nur den beteiligten Personen, aber sende nichts, was andere nicht lesen sollen, etwa deine Wohnadresse oder Bankdaten.</p>
+    <p class="note">Nachrichtentexte, Angebotsnotizen sowie Treffpunkt und Uhrzeit werden vor dem Upload in CloudKit auf dem Gerät mit den Schlüsseln der Beteiligten verschlüsselt. Der private Schlüssel liegt im iCloud-Schlüsselbund. Nutzerkennungen und Tauschmetadaten bleiben in der öffentlichen Datenbank. Ohne synchronisierten Schlüssel sind private Inhalte unlesbar und werden niemals im Klartext gesendet. Beim Melden wird diese Nachricht an die Moderation gesendet. Der restliche Chat bleibt privat.</p>
   </div>
 
   <div class="block">
@@ -477,7 +477,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li>Der Zugriff auf die <strong>Kamera</strong> wird nur genutzt, wenn du dich entscheidest, eine Pflanze für eine Anzeige zu fotografieren.</li>
       <li><strong>Fotos</strong> werden über Apples Fotoauswahl ausgewählt, sodass die App nur die Bilder erhält, die du auswählst. Vor dem Hochladen wird jedes Foto verkleinert und von versteckten Metadaten befreit, einschließlich eines etwaigen GPS-Standorts.</li>
-      <li><strong>Mitteilungen</strong> sind optional. Wenn du sie erlaubst, informiert dich Apples Push-Dienst über neue Angebote, Antworten, Tausch-Updates, Nachrichten und Bewertungen. Eine Mitteilung zu einer Nachricht zeigt je nach Geräteeinstellungen den Nachrichtentext auf deinem Sperrbildschirm.</li>
+      <li>Mitteilungen sind optional. Sie informieren über Nachrichten und Tauschvorgänge, ohne private Nachrichtentexte zu enthalten.</li>
     </ul>
   </div>
 
@@ -562,7 +562,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Dónde se guarda</h3>
     <p>Todo lo anterior, salvo lo que se queda en tu dispositivo, se guarda en Apple, en el contenedor de iCloud CloudKit de la app. Lo que otras personas necesitan ver está en la base de datos compartida (pública) de la app; tus ajustes privados están en tu base de datos privada de iCloud. No tenemos servidores propios. Apple aloja y protege los datos conforme a su propia <a href="https://www.apple.com/legal/privacy/" rel="noopener">política de privacidad</a>.</p>
-    <p class="note"><strong>Ten en cuenta:</strong> las ofertas, los mensajes y los detalles de los intercambios se guardan en la base de datos compartida junto con los anuncios y no tienen cifrado de extremo a extremo. La app solo los muestra a las personas implicadas, pero no envíes nada que no quieras que otros lean, como la dirección de tu casa o tus datos bancarios.</p>
+    <p class="note">Los mensajes, las notas de las ofertas y el lugar y la hora del encuentro se cifran en el dispositivo con las claves de los participantes antes de subirlos a CloudKit. La clave privada se guarda en el llavero de iCloud. Los identificadores y metadatos del intercambio permanecen en la base pública. Sin la clave sincronizada, el contenido privado no se puede leer y nunca se envía sin cifrar. La denuncia envía este mensaje a los moderadores. El resto de la conversación sigue siendo privado.</p>
   </div>
 
   <div class="block">
@@ -575,7 +575,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li>El acceso a la <strong>cámara</strong> solo se usa cuando decides fotografiar una planta para un anuncio.</li>
       <li>Las <strong>fotos</strong> se eligen con el selector de fotos de Apple, así que la app solo recibe las imágenes que seleccionas. Antes de subirla, cada foto se redimensiona y se eliminan sus metadatos ocultos, incluida cualquier ubicación GPS.</li>
-      <li>Las <strong>notificaciones</strong> son opcionales. Si las permites, el servicio de notificaciones push de Apple te avisa de nuevas ofertas, respuestas, novedades de intercambios, mensajes y reseñas. Una notificación de mensaje muestra el texto del mensaje en tu pantalla bloqueada, según los ajustes de tu dispositivo.</li>
+      <li>Las notificaciones son opcionales. Avisan de mensajes e intercambios sin incluir el texto de mensajes privados.</li>
     </ul>
   </div>
 
@@ -660,7 +660,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Où les données sont conservées</h3>
     <p>Tout ce qui précède, sauf ce qui reste sur votre appareil, est stocké chez Apple dans le conteneur iCloud CloudKit de l’application. Ce que les autres doivent voir se trouve dans la base partagée (publique) de l’application ; vos réglages privés sont dans votre base iCloud privée. Nous n’exploitons aucun serveur. Apple héberge et protège ces données selon sa propre <a href="https://www.apple.com/legal/privacy/" rel="noopener">politique de confidentialité</a>.</p>
-    <p class="note"><strong>À savoir :</strong> les offres, les messages et les détails des échanges sont stockés dans la base partagée, comme les annonces, et ne sont pas chiffrés de bout en bout. L’application ne les montre qu’aux personnes concernées, mais n’envoyez rien que vous ne voudriez pas voir lu par d’autres, comme votre adresse ou vos coordonnées bancaires.</p>
+    <p class="note">Le texte des messages, les notes des offres, le lieu et l’heure du rendez-vous sont chiffrés sur votre appareil avec les clés des participants avant leur envoi à CloudKit. La clé privée est conservée dans le trousseau iCloud. Les identifiants et les métadonnées des échanges restent dans la base publique. Sans votre clé synchronisée, le contenu privé reste inaccessible et n’est jamais envoyé en clair. Le signalement transmet ce message aux modérateurs. Le reste de la conversation reste privé.</p>
   </div>
 
   <div class="block">
@@ -673,7 +673,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>L’appareil photo</strong> ne sert que lorsque vous choisissez de photographier une plante pour une annonce.</li>
       <li><strong>Les photos</strong> sont choisies via le sélecteur d’Apple : l’application ne reçoit que les images que vous sélectionnez. Avant l’envoi, chaque photo est redimensionnée et ses métadonnées cachées, y compris une éventuelle position GPS, sont supprimées.</li>
-      <li><strong>Les notifications</strong> sont facultatives. Si vous les autorisez, le service de notifications d’Apple vous prévient des nouvelles offres, réponses, étapes d’échange, messages et avis. Une notification de message affiche son texte sur l’écran verrouillé, selon les réglages de votre appareil.</li>
+      <li>Les notifications sont facultatives. Elles annoncent les messages et les échanges sans inclure le texte des messages privés.</li>
     </ul>
   </div>
 
@@ -758,7 +758,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Dove sono conservati</h3>
     <p>Tutto quanto sopra, tranne ciò che resta sul tuo dispositivo, è conservato presso Apple, nel container iCloud CloudKit dell’app. Gli elementi che altre persone devono vedere si trovano nel database condiviso (pubblico) dell’app; le tue impostazioni private si trovano nel tuo database iCloud privato. Non gestiamo server nostri. Apple ospita e protegge i dati secondo la propria <a href="https://www.apple.com/legal/privacy/" rel="noopener">informativa sulla privacy</a>.</p>
-    <p class="note"><strong>Tieni presente:</strong> offerte, messaggi e dettagli degli scambi sono conservati nel database condiviso insieme agli annunci e non sono crittografati end-to-end. L’app li mostra solo alle persone coinvolte, ma non inviare nulla che non vorresti far leggere ad altri, come l’indirizzo di casa o le coordinate bancarie.</p>
+    <p class="note">Il testo dei messaggi, le note delle offerte e il luogo e l’ora dell’incontro vengono cifrati sul dispositivo con le chiavi dei partecipanti prima dell’invio a CloudKit. La chiave privata è nel Portachiavi iCloud. Gli identificativi e i metadati dello scambio restano nel database pubblico. Senza la chiave sincronizzata, i contenuti privati sono illeggibili e non vengono mai inviati in chiaro. La segnalazione invia questo messaggio ai moderatori. Il resto della conversazione resta privato.</p>
   </div>
 
   <div class="block">
@@ -771,7 +771,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li>L’accesso alla <strong>fotocamera</strong> viene usato solo quando scegli di fotografare una pianta per un annuncio.</li>
       <li>Le <strong>foto</strong> vengono scelte tramite il selettore di foto di Apple, quindi l’app riceve solo le immagini che selezioni. Prima del caricamento ogni foto viene ridimensionata e privata dei metadati nascosti, inclusa l’eventuale posizione GPS.</li>
-      <li>Le <strong>notifiche</strong> sono facoltative. Se le consenti, il servizio di notifiche push di Apple ti avvisa di nuove offerte, risposte, aggiornamenti degli scambi, messaggi e recensioni. La notifica di un messaggio mostra il testo del messaggio sulla schermata di blocco, a seconda delle impostazioni del dispositivo.</li>
+      <li>Le notifiche sono facoltative. Segnalano messaggi e scambi senza includere il testo dei messaggi privati.</li>
     </ul>
   </div>
 
@@ -856,7 +856,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Hvor dataene lagres</h3>
     <p>Alt ovenfor, bortsett fra det som blir på enheten din, lagres hos Apple i appens iCloud CloudKit-container. Det andre trenger å se, ligger i appens delte (offentlige) database; de private innstillingene dine ligger i din private iCloud-database. Vi driver ingen egne servere. Apple driver og beskytter dataene i henhold til sin egen <a href="https://www.apple.com/legal/privacy/" rel="noopener">personvernerklæring</a>.</p>
-    <p class="note"><strong>Husk:</strong> Tilbud, meldinger og detaljer om bytter lagres i den delte databasen sammen med annonsene, og de er ikke ende-til-ende-kryptert. Appen viser dem bare til de involverte, men ikke send noe du ikke vil at andre skal lese, for eksempel hjemmeadressen din eller bankopplysninger.</p>
+    <p class="note">Meldingstekst, tilbudsnotater samt møtested og tidspunkt krypteres på enheten med deltakernes nøkler før opplasting til CloudKit. Den private nøkkelen lagres i iCloud-nøkkelring. Deltaker-ID-er og byttets metadata blir i den offentlige databasen. Uten den synkroniserte nøkkelen er privat innhold utilgjengelig og sendes aldri i klartekst. Rapporten sender denne meldingen til moderatorene. Resten av samtalen forblir privat.</p>
   </div>
 
   <div class="block">
@@ -869,7 +869,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li>Tilgang til <strong>kameraet</strong> brukes bare når du velger å ta bilde av en plante til en annonse.</li>
       <li><strong>Bilder</strong> velges med Apples bildevelger, så appen får bare bildene du velger. Før opplasting skaleres hvert bilde ned, og skjulte metadata fjernes, blant annet eventuell GPS-posisjon.</li>
-      <li><strong>Varslinger</strong> er valgfrie. Hvis du tillater dem, varsler Apples push-tjeneste deg om nye tilbud, svar, oppdateringer i bytter, meldinger og vurderinger. Et varsel om en melding viser meldingsteksten på låseskjermen, avhengig av innstillingene på enheten.</li>
+      <li>Varsler er valgfrie. De gir beskjed om nye meldinger og bytter uten privat meldingstekst.</li>
     </ul>
   </div>
 
@@ -954,7 +954,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Waar het wordt bewaard</h3>
     <p>Alles hierboven, behalve wat op je apparaat blijft, wordt bij Apple opgeslagen in de iCloud CloudKit-container van de app. Wat anderen moeten kunnen zien, staat in de gedeelde (openbare) database van de app; je privé-instellingen staan in je privé-iCloud-database. We hebben geen eigen servers. Apple host en beschermt de gegevens volgens het eigen <a href="https://www.apple.com/legal/privacy/" rel="noopener">privacybeleid</a>.</p>
-    <p class="note"><strong>Let op:</strong> voorstellen, berichten en details over ruilen worden samen met advertenties in de gedeelde database opgeslagen en zijn niet end-to-end versleuteld. De app toont ze alleen aan de betrokkenen, maar stuur niets wat je niet door anderen gelezen wilt hebben, zoals je huisadres of bankgegevens.</p>
+    <p class="note">Berichttekst, notities bij aanbiedingen en de plaats en tijd van de afspraak worden vóór upload naar CloudKit op het apparaat versleuteld met de sleutels van de deelnemers. De privésleutel staat in iCloud-sleutelhanger. Deelnemer-ID’s en ruilmetadata blijven in de openbare database. Zonder gesynchroniseerde sleutel is privé-inhoud onleesbaar en wordt deze nooit als platte tekst verzonden. Bij een melding wordt dit bericht naar de moderators gestuurd. De rest van het gesprek blijft privé.</p>
   </div>
 
   <div class="block">
@@ -967,7 +967,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li>Toegang tot de <strong>camera</strong> wordt alleen gebruikt als je ervoor kiest een plant te fotograferen voor een advertentie.</li>
       <li><strong>Foto’s</strong> worden gekozen via de fotokiezer van Apple, dus de app krijgt alleen de afbeeldingen die je selecteert. Voor het uploaden wordt elke foto verkleind en worden verborgen metadata verwijderd, waaronder een eventuele gps-locatie.</li>
-      <li><strong>Pushmeldingen</strong> zijn optioneel. Als je ze toestaat, laat de pushdienst van Apple je weten wanneer er nieuwe voorstellen, antwoorden, updates over ruilen, berichten en beoordelingen zijn. Een melding van een bericht toont de berichttekst op je toegangsscherm, afhankelijk van de instellingen van je apparaat.</li>
+      <li>Meldingen zijn optioneel. Ze informeren over berichten en ruilen zonder privéberichttekst te bevatten.</li>
     </ul>
   </div>
 
@@ -1052,7 +1052,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Onde os dados ficam</h3>
     <p>Tudo o que está acima, exceto o que fica no seu aparelho, é armazenado na Apple, no contêiner iCloud CloudKit do app. O que outras pessoas precisam ver fica no banco de dados compartilhado (público) do app; seus ajustes privados ficam no seu banco privado do iCloud. Não temos servidores próprios. A Apple hospeda e protege esses dados conforme a sua <a href="https://www.apple.com/legal/privacy/" rel="noopener">política de privacidade</a>.</p>
-    <p class="note"><strong>Importante:</strong> ofertas, mensagens e detalhes das trocas ficam no banco compartilhado, como os anúncios, e não têm criptografia de ponta a ponta. O app só mostra esses dados às pessoas envolvidas, mas não envie nada que você não gostaria que outros lessem, como seu endereço ou seus dados bancários.</p>
+    <p class="note">O texto das mensagens, as notas das ofertas e o local e horário do encontro são criptografados no aparelho com as chaves dos participantes antes do envio ao CloudKit. A chave privada fica nas Chaves do iCloud. IDs e metadados das trocas permanecem no banco público. Sem a chave sincronizada, o conteúdo privado fica indisponível e nunca é enviado em texto aberto. A denúncia envia esta mensagem aos moderadores. O restante da conversa permanece privado.</p>
   </div>
 
   <div class="block">
@@ -1065,7 +1065,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>A câmera</strong> só é usada quando você decide fotografar uma planta para um anúncio.</li>
       <li><strong>As fotos</strong> são escolhidas pelo seletor da Apple, então o app recebe apenas as imagens que você seleciona. Antes do envio, cada foto é redimensionada e seus metadados ocultos, incluindo qualquer localização GPS, são removidos.</li>
-      <li><strong>As notificações</strong> são opcionais. Se você permitir, o serviço de notificações da Apple avisa sobre novas ofertas, respostas, andamento das trocas, mensagens e avaliações. A notificação de mensagem mostra o texto na tela bloqueada, conforme os ajustes do seu aparelho.</li>
+      <li>As notificações são opcionais. Elas avisam sobre mensagens e trocas sem incluir o texto das mensagens privadas.</li>
     </ul>
   </div>
 
@@ -1150,7 +1150,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Var det sparas</h3>
     <p>Allt ovan, utom det som stannar på din enhet, lagras hos Apple i appens iCloud CloudKit-container. Sådant som andra behöver se ligger i appens delade (publika) databas; dina privata inställningar ligger i din privata iCloud-databas. Vi driver inga egna servrar. Apple lagrar och skyddar informationen enligt sin egen <a href="https://www.apple.com/legal/privacy/" rel="noopener">integritetspolicy</a>.</p>
-    <p class="note"><strong>Tänk på:</strong> bud, meddelanden och uppgifter om byten lagras i den delade databasen tillsammans med annonserna, och de är inte totalsträckskrypterade. Appen visar dem bara för de inblandade, men skicka inget du inte vill att andra ska kunna läsa, till exempel din hemadress eller dina bankuppgifter.</p>
+    <p class="note">Meddelandetext, anteckningar till erbjudanden samt mötesplats och tid krypteras på enheten med deltagarnas nycklar före uppladdning till CloudKit. Den privata nyckeln lagras i iCloud-nyckelring. Deltagar-ID och bytets metadata finns kvar i den offentliga databasen. Utan synkroniserad nyckel är privat innehåll oläsbart och skickas aldrig i klartext. Anmälan skickar detta meddelande till moderatorerna. Resten av samtalet förblir privat.</p>
   </div>
 
   <div class="block">
@@ -1163,7 +1163,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>Kameran</strong> används bara när du väljer att fotografera en växt till en annons.</li>
       <li><strong>Foton</strong> väljs via Apples bildväljare, så appen får bara de bilder du väljer. Innan uppladdning skalas varje foto ned och dess dolda metadata, inklusive eventuell GPS-position, tas bort.</li>
-      <li><strong>Notiser</strong> är valfria. Om du tillåter dem berättar Apples pushtjänst om nya bud, svar, uppdateringar i byten, meddelanden och omdömen. En notis om ett meddelande visar meddelandets text på låsskärmen, beroende på enhetens inställningar.</li>
+      <li>Notiser är valfria. De meddelar om nya meddelanden och byten utan privat meddelandetext.</li>
     </ul>
   </div>
 
@@ -1248,7 +1248,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Nerede tutulur</h3>
     <p>Cihazında kalanlar dışında yukarıdaki her şey, Apple’da, uygulamanın iCloud CloudKit kapsayıcısında saklanır. Başkalarının görmesi gereken öğeler uygulamanın paylaşılan (herkese açık) veritabanında, özel ayarların ise özel iCloud veritabanında bulunur. Kendimize ait hiçbir sunucu çalıştırmayız. Veriler Apple tarafından, Apple’ın kendi <a href="https://www.apple.com/legal/privacy/" rel="noopener">gizlilik politikası</a> kapsamında barındırılır ve korunur.</p>
-    <p class="note"><strong>Lütfen unutma:</strong> teklifler, mesajlar ve takas ayrıntıları ilanlarla birlikte paylaşılan veritabanında saklanır ve uçtan uca şifrelenmez. Uygulama bunları yalnızca ilgili kişilere gösterir, ancak ev adresin ya da banka bilgilerin gibi başkalarının okumasını istemeyeceğin hiçbir şeyi gönderme.</p>
+    <p class="note">Mesaj metni, teklif notları, buluşma yeri ve saati CloudKit’e yüklenmeden önce aygıtta katılımcıların anahtarlarıyla şifrelenir. Özel anahtar iCloud Anahtar Zinciri’nde saklanır. Katılımcı kimlikleri ve takas meta verileri herkese açık veritabanında kalır. Eşzamanlanmış anahtar olmadan özel içerik okunamaz ve asla açık metin olarak gönderilmez. Bildirim bu mesajı moderatörlere gönderir. Konuşmanın geri kalanı gizli kalır.</p>
   </div>
 
   <div class="block">
@@ -1261,7 +1261,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>Kamera</strong> erişimi yalnızca bir ilan için bitkinin fotoğrafını çekmeyi seçtiğinde kullanılır.</li>
       <li><strong>Fotoğraflar</strong> Apple’ın fotoğraf seçicisiyle seçilir; böylece uygulama yalnızca seçtiğin resimleri alır. Yüklemeden önce her fotoğraf yeniden boyutlandırılır ve GPS konumu dahil gizli meta verileri kaldırılır.</li>
-      <li><strong>Bildirimler</strong> isteğe bağlıdır. İzin verirsen Apple’ın anlık bildirim hizmeti seni yeni teklifler, yanıtlar, takas güncellemeleri, mesajlar ve değerlendirmeler hakkında bilgilendirir. Mesaj bildirimi, cihaz ayarlarına bağlı olarak mesaj metnini kilitli ekranında gösterir.</li>
+      <li>Bildirimler isteğe bağlıdır. Özel mesaj metnini içermeden yeni mesajları ve takas güncellemelerini bildirir.</li>
     </ul>
   </div>
 
@@ -1346,7 +1346,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Dữ liệu được lưu ở đâu</h3>
     <p>Mọi dữ liệu nêu trên, trừ những gì ở lại trên thiết bị của bạn, được lưu trữ tại Apple trong vùng chứa iCloud CloudKit của ứng dụng. Những mục mà người khác cần xem nằm trong cơ sở dữ liệu dùng chung (công khai) của ứng dụng; cài đặt riêng tư của bạn nằm trong cơ sở dữ liệu iCloud riêng tư của bạn. Chúng tôi không vận hành máy chủ riêng nào. Apple lưu trữ và bảo vệ dữ liệu theo <a href="https://www.apple.com/legal/privacy/" rel="noopener">chính sách quyền riêng tư</a> của chính Apple.</p>
-    <p class="note"><strong>Xin lưu ý:</strong> đề nghị, tin nhắn và chi tiết trao đổi được lưu trong cơ sở dữ liệu dùng chung cùng với tin đăng, và chúng không được mã hóa đầu cuối. Ứng dụng chỉ hiển thị chúng cho những người liên quan, nhưng đừng gửi bất cứ điều gì bạn không muốn người khác đọc, chẳng hạn như địa chỉ nhà hoặc thông tin ngân hàng.</p>
+    <p class="note">Nội dung tin nhắn, ghi chú đề nghị, địa điểm và thời gian gặp được mã hóa trên thiết bị bằng khóa của người tham gia trước khi tải lên CloudKit. Khóa riêng được lưu trong Chuỗi khóa iCloud. ID người tham gia và siêu dữ liệu trao đổi vẫn ở cơ sở dữ liệu công khai. Khi khóa chưa đồng bộ, nội dung riêng tư không đọc được và không bao giờ được gửi dưới dạng văn bản thuần. Báo cáo sẽ gửi tin nhắn này cho người kiểm duyệt. Phần còn lại của cuộc trò chuyện vẫn riêng tư.</p>
   </div>
 
   <div class="block">
@@ -1359,7 +1359,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li>Quyền truy cập <strong>camera</strong> chỉ được dùng khi bạn chọn chụp ảnh một cây cho tin đăng.</li>
       <li><strong>Ảnh</strong> được chọn qua trình chọn ảnh của Apple, nên ứng dụng chỉ nhận những ảnh bạn chọn. Trước khi tải lên, mỗi ảnh được thu nhỏ và siêu dữ liệu ẩn, bao gồm mọi vị trí GPS, sẽ bị loại bỏ.</li>
-      <li><strong>Thông báo</strong> là tùy chọn. Nếu bạn cho phép, dịch vụ đẩy của Apple sẽ báo cho bạn về đề nghị mới, phản hồi, cập nhật trao đổi, tin nhắn và đánh giá. Thông báo tin nhắn hiển thị nội dung tin nhắn trên màn hình khóa, tùy theo cài đặt thiết bị của bạn.</li>
+      <li>Thông báo là tùy chọn. Chúng báo tin nhắn và cập nhật trao đổi mà không chứa nội dung tin nhắn riêng tư.</li>
     </ul>
   </div>
 
@@ -1444,7 +1444,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>Где хранятся данные</h3>
     <p>Всё перечисленное, кроме того, что остаётся на устройстве, хранится у Apple в контейнере iCloud CloudKit приложения. То, что должны видеть другие, лежит в общей (публичной) базе данных приложения, а ваши личные настройки — в вашей личной базе iCloud. Собственных серверов у нас нет. Apple размещает и защищает эти данные в соответствии со своей <a href="https://www.apple.com/legal/privacy/" rel="noopener">политикой конфиденциальности</a>.</p>
-    <p class="note"><strong>Учтите:</strong> предложения, сообщения и подробности обменов хранятся в общей базе вместе с объявлениями и не защищены сквозным шифрованием. Приложение показывает их только участникам, но не пишите того, что не хотели бы показать посторонним, например домашний адрес или банковские реквизиты.</p>
+    <p class="note">Текст сообщений, комментарии к предложениям, место и время встречи шифруются на устройстве ключами участников до отправки в CloudKit. Приватный ключ хранится в Связке ключей iCloud. Идентификаторы участников и технические сведения об обмене остаются в общей базе. Без синхронизированного ключа личное содержимое недоступно и не отправляется открытым текстом. Жалоба передаст модераторам выбранное сообщение. Остальная переписка останется закрытой.</p>
   </div>
 
   <div class="block">
@@ -1457,7 +1457,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>Камера</strong> включается, только когда вы сами решаете сфотографировать растение для объявления.</li>
       <li><strong>Фотографии</strong> выбираются через стандартное окно Apple, поэтому приложение получает только те снимки, которые вы отметили. Перед загрузкой каждое фото уменьшается, а скрытые метаданные, включая GPS-координаты, удаляются.</li>
-      <li><strong>Уведомления</strong> необязательны. Если вы их разрешите, служба уведомлений Apple сообщит о новых предложениях, ответах, ходе обменов, сообщениях и отзывах. Уведомление о сообщении показывает его текст на заблокированном экране — в зависимости от настроек устройства.</li>
+      <li>Уведомления необязательны. Они сообщают о новых сообщениях и обменах, не включая текст личной переписки.</li>
     </ul>
   </div>
 
@@ -1542,7 +1542,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>أين تُحفظ</h3>
     <p>كل ما سبق، باستثناء ما يبقى على جهازك، يُخزَّن لدى Apple في حاوية iCloud CloudKit الخاصة بالتطبيق. ما يحتاج الآخرون إلى رؤيته يوجد في قاعدة البيانات المشتركة (العامة) للتطبيق، أما إعداداتك الخاصة فتوجد في قاعدة بيانات iCloud الخاصة بك. لا نشغّل أي خوادم خاصة بنا. وتستضيف Apple البيانات وتحميها وفق <a href="https://www.apple.com/legal/privacy/" rel="noopener">سياسة الخصوصية</a> الخاصة بها.</p>
-    <p class="note"><strong>يُرجى الانتباه:</strong> تُخزَّن العروض والرسائل وتفاصيل التبادل في قاعدة البيانات المشتركة إلى جانب الإعلانات، وهي غير مشفّرة تشفيرًا تامًّا بين الطرفين. لا يعرضها التطبيق إلا للأشخاص المعنيين، لكن لا ترسل أي شيء لا تريد أن يقرأه الآخرون، مثل عنوان منزلك أو بياناتك المصرفية.</p>
+    <p class="note">يُشفّر نص الرسائل وملاحظات العروض ومكان اللقاء ووقته على جهازك بمفاتيح المشاركين قبل رفعها إلى CloudKit. يُحفظ المفتاح الخاص في سلسلة مفاتيح iCloud. تبقى معرّفات المشاركين وبيانات التبادل الوصفية في قاعدة البيانات العامة. دون مزامنة مفتاحك، يتعذر قراءة المحتوى الخاص ولا يُرسل كنص مكشوف. يُرسل البلاغ هذه الرسالة إلى المشرفين. تبقى بقية المحادثة خاصة.</p>
   </div>
 
   <div class="block">
@@ -1555,7 +1555,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>الكاميرا</strong> لا يُستخدم الوصول إليها إلا عندما تختار تصوير نبتة لإعلان.</li>
       <li><strong>الصور</strong> تُختار عبر أداة اختيار الصور من Apple، فلا يتلقى التطبيق إلا الصور التي تحدّدها. وقبل الرفع يُغيَّر حجم كل صورة وتُزال بياناتها الوصفية المخفية، بما فيها أي موقع GPS.</li>
-      <li><strong>الإشعارات</strong> اختيارية. إذا سمحت بها، تُعلمك خدمة الإشعارات من Apple بالعروض الجديدة والردود وتحديثات التبادل والرسائل والتقييمات. ويعرض إشعار الرسالة نصها على شاشة القفل، بحسب إعدادات جهازك.</li>
+      <li>الإشعارات اختيارية. تُعلمك بالرسائل والتبادلات دون تضمين نص الرسائل الخاصة.</li>
     </ul>
   </div>
 
@@ -1640,7 +1640,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>यह कहाँ रखा जाता है</h3>
     <p>ऊपर बताई गई हर चीज़, सिवाय उसके जो आपके डिवाइस पर रहती है, Apple के पास ऐप के iCloud CloudKit कंटेनर में सहेजी जाती है। जिन चीज़ों को दूसरों को देखना होता है, वे ऐप के साझा (सार्वजनिक) डेटाबेस में रहती हैं; आपकी निजी सेटिंग्स आपके निजी iCloud डेटाबेस में रहती हैं। हमारे अपने कोई सर्वर नहीं हैं। Apple इस डेटा को अपनी <a href="https://www.apple.com/legal/privacy/" rel="noopener">गोपनीयता नीति</a> के तहत होस्ट करता है और सुरक्षित रखता है।</p>
-    <p class="note"><strong>कृपया ध्यान रखें:</strong> प्रस्ताव, संदेश और अदला-बदली का ब्योरा पोस्ट के साथ साझा डेटाबेस में सहेजा जाता है, और ये एंड-टू-एंड एन्क्रिप्टेड नहीं हैं। ऐप इन्हें केवल संबंधित लोगों को दिखाता है, फिर भी ऐसा कुछ न भेजें जिसे आप दूसरों को पढ़ने नहीं देना चाहेंगे, जैसे आपके घर का पता या बैंक की जानकारी।</p>
+    <p class="note">संदेश का पाठ, ऑफ़र के नोट और मिलने की जगह व समय CloudKit पर भेजने से पहले डिवाइस पर प्रतिभागियों की कुंजियों से एन्क्रिप्ट होते हैं। निजी कुंजी iCloud कीचेन में रहती है। प्रतिभागियों की आईडी और अदला-बदली का मेटाडेटा सार्वजनिक डेटाबेस में रहता है। सिंक हुई कुंजी के बिना निजी सामग्री पढ़ी नहीं जा सकती और कभी खुले पाठ में नहीं भेजी जाती। रिपोर्ट करने पर यह संदेश मॉडरेटर को भेजा जाएगा। बाकी बातचीत निजी रहेगी।</p>
   </div>
 
   <div class="block">
@@ -1653,7 +1653,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>कैमरे</strong> का एक्सेस केवल तब इस्तेमाल होता है जब आप किसी पोस्ट के लिए पौधे की फ़ोटो लेना चुनते हैं।</li>
       <li><strong>फ़ोटो</strong> Apple के फ़ोटो पिकर से चुनी जाती हैं, इसलिए ऐप को केवल वही तस्वीरें मिलती हैं जो आप चुनते हैं। अपलोड से पहले हर फ़ोटो का आकार बदला जाता है और उसका छिपा मेटाडेटा, किसी भी GPS स्थान समेत, हटा दिया जाता है।</li>
-      <li><strong>सूचनाएँ</strong> वैकल्पिक हैं। अगर आप इनकी अनुमति देते हैं, तो Apple की पुश सेवा आपको नए प्रस्तावों, जवाबों, अदला-बदली के अपडेट, संदेशों और समीक्षाओं की ख़बर देती है। आपके डिवाइस की सेटिंग्स के अनुसार, संदेश की सूचना में संदेश का टेक्स्ट आपकी लॉक स्क्रीन पर दिखता है।</li>
+      <li>सूचनाएँ वैकल्पिक हैं। वे निजी संदेश का पाठ शामिल किए बिना नए संदेशों और अदला-बदली की जानकारी देती हैं।</li>
     </ul>
   </div>
 
@@ -1738,7 +1738,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>ข้อมูลเก็บไว้ที่ใด</h3>
     <p>ทุกอย่างข้างต้น ยกเว้นสิ่งที่อยู่บนอุปกรณ์ของคุณ จะจัดเก็บไว้กับ Apple ในคอนเทนเนอร์ iCloud CloudKit ของแอป รายการที่ผู้อื่นต้องเห็นจะอยู่ในฐานข้อมูลที่ใช้ร่วมกัน (สาธารณะ) ของแอป ส่วนการตั้งค่าส่วนตัวของคุณอยู่ในฐานข้อมูล iCloud ส่วนตัวของคุณ เราไม่มีเซิร์ฟเวอร์ของตัวเอง Apple เป็นผู้โฮสต์และปกป้องข้อมูลภายใต้<a href="https://www.apple.com/legal/privacy/" rel="noopener">นโยบายความเป็นส่วนตัว</a>ของ Apple เอง</p>
-    <p class="note"><strong>โปรดทราบ:</strong> ข้อเสนอ ข้อความ และรายละเอียดการแลกเปลี่ยนจะจัดเก็บในฐานข้อมูลที่ใช้ร่วมกันพร้อมกับประกาศ และไม่ได้เข้ารหัสจากต้นทางถึงปลายทาง แอปจะแสดงข้อมูลเหล่านี้เฉพาะกับผู้ที่เกี่ยวข้องเท่านั้น แต่อย่าส่งสิ่งที่คุณไม่ต้องการให้ผู้อื่นอ่าน เช่น ที่อยู่บ้านหรือข้อมูลบัญชีธนาคาร</p>
+    <p class="note">ข้อความ บันทึกข้อเสนอ สถานที่และเวลานัดพบจะเข้ารหัสบนอุปกรณ์ด้วยกุญแจของผู้ร่วมแลกก่อนส่งไปยัง CloudKit กุญแจส่วนตัวเก็บไว้ในพวงกุญแจ iCloud รหัสผู้ร่วมแลกและข้อมูลประกอบการแลกยังอยู่ในฐานข้อมูลสาธารณะ หากกุญแจยังไม่ซิงค์ จะอ่านเนื้อหาส่วนตัวไม่ได้และแอปจะไม่ส่งเป็นข้อความที่ไม่เข้ารหัส การรายงานจะส่งข้อความนี้ให้ผู้ดูแล ส่วนที่เหลือของการสนทนายังคงเป็นส่วนตัว</p>
   </div>
 
   <div class="block">
@@ -1751,7 +1751,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li>การเข้าถึง<strong>กล้อง</strong>จะใช้เฉพาะเมื่อคุณเลือกถ่ายภาพต้นไม้สำหรับประกาศ</li>
       <li><strong>รูปภาพ</strong>เลือกผ่านตัวเลือกรูปภาพของ Apple แอปจึงได้รับเฉพาะรูปที่คุณเลือกเท่านั้น ก่อนอัปโหลด รูปภาพแต่ละรูปจะถูกย่อขนาดและลบข้อมูลเมตาที่ซ่อนอยู่ รวมถึงตำแหน่ง GPS</li>
-      <li><strong>การแจ้งเตือน</strong>เป็นตัวเลือกเสริม หากคุณอนุญาต บริการพุชของ Apple จะแจ้งให้คุณทราบเมื่อมีข้อเสนอใหม่ การตอบกลับ ความคืบหน้าการแลกเปลี่ยน ข้อความ และรีวิว การแจ้งเตือนข้อความจะแสดงเนื้อหาของข้อความบนหน้าจอล็อก ทั้งนี้ขึ้นอยู่กับการตั้งค่าอุปกรณ์ของคุณ</li>
+      <li>การแจ้งเตือนเป็นตัวเลือก โดยจะแจ้งข้อความใหม่และการแลกเปลี่ยนโดยไม่รวมเนื้อหาข้อความส่วนตัว</li>
     </ul>
   </div>
 
@@ -1836,7 +1836,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>保管場所</h3>
     <p>デバイス上にとどまるものを除き、上記のすべての情報は、アプリのiCloud CloudKitコンテナでAppleが保管します。ほかの人が見る必要のある項目はアプリの共有（公開）データベースに、あなたの非公開の設定はあなたの非公開iCloudデータベースに保存されます。私たちは独自のサーバを運用していません。データはAppleが自社の<a href="https://www.apple.com/legal/privacy/" rel="noopener">プライバシーポリシー</a>に基づいてホスティングし、保護しています。</p>
-    <p class="note"><strong>ご注意ください：</strong>提案、メッセージ、交換の詳細は、投稿と同じ共有データベースに保存され、エンドツーエンドで暗号化されていません。アプリは関係する人にしか表示しませんが、自宅の住所や銀行口座の情報など、ほかの人に読まれたくないものは送らないでください。</p>
+    <p class="note">メッセージ本文、交換提案のメモ、待ち合わせ場所と時刻は、CloudKitへの送信前に参加者の鍵を使ってデバイス上で暗号化されます。秘密鍵はiCloudキーチェーンに保存されます。参加者IDと交換のメタデータは公開データベースに残ります。鍵が同期されていない場合、私的な内容は読めず、平文でも送信されません。 報告すると、このメッセージがモデレーターに送信されます。会話の残りは非公開のままです。</p>
   </div>
 
   <div class="block">
@@ -1849,7 +1849,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>カメラ</strong>へのアクセスは、投稿用に植物を撮影することを選んだときにだけ使われます。</li>
       <li><strong>写真</strong>はAppleの写真ピッカーで選ぶので、アプリが受け取るのはあなたが選んだ写真だけです。アップロード前に、各写真はサイズが調整され、GPS位置情報を含む隠れたメタデータが削除されます。</li>
-      <li><strong>通知</strong>は任意です。許可すると、Appleのプッシュサービスを通じて、新しい提案、返答、交換の更新、メッセージ、レビューをお知らせします。メッセージの通知では、デバイスの設定によってはロック画面にメッセージの本文が表示されます。</li>
+      <li>通知は任意です。私的なメッセージ本文を含めずに、新着メッセージや交換の更新をお知らせします。</li>
     </ul>
   </div>
 
@@ -1934,7 +1934,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>보관 위치</h3>
     <p>기기에 남는 것을 제외한 위의 모든 정보는 앱의 iCloud CloudKit 컨테이너에 Apple이 보관해요. 다른 사람이 봐야 하는 항목은 앱의 공유(공개) 데이터베이스에, 내 개인 설정은 내 비공개 iCloud 데이터베이스에 저장돼요. 저희는 자체 서버를 운영하지 않아요. Apple은 자체 <a href="https://www.apple.com/legal/privacy/" rel="noopener">개인정보 처리방침</a>에 따라 데이터를 호스팅하고 보호해요.</p>
-    <p class="note"><strong>유의해 주세요:</strong> 제안, 메시지, 교환 세부 정보는 게시물과 함께 공유 데이터베이스에 저장되며, 종단간 암호화되지 않아요. 앱은 관련된 사람에게만 표시하지만, 집 주소나 은행 정보처럼 다른 사람이 읽기를 원하지 않는 내용은 보내지 마세요.</p>
+    <p class="note">메시지 본문, 제안 메모, 만날 장소와 시간은 CloudKit에 업로드하기 전에 기기에서 참여자의 키로 암호화됩니다. 개인 키는 iCloud 키체인에 저장됩니다. 참여자 ID와 교환 메타데이터는 공개 데이터베이스에 남습니다. 키가 동기화되지 않으면 비공개 내용을 읽을 수 없으며 일반 텍스트로 전송되지 않습니다. 신고하면 이 메시지가 관리자에게 전송됩니다. 나머지 대화는 비공개로 유지됩니다.</p>
   </div>
 
   <div class="block">
@@ -1947,7 +1947,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>카메라</strong> 접근은 게시물에 올릴 식물을 촬영하기로 선택할 때만 사용돼요.</li>
       <li><strong>사진</strong>은 Apple의 사진 선택기를 통해 고르기 때문에 앱은 내가 선택한 사진만 받아요. 업로드 전에 각 사진의 크기를 조정하고, GPS 위치를 포함한 숨겨진 메타데이터를 제거해요.</li>
-      <li><strong>알림</strong>은 선택 사항이에요. 허용하면 Apple의 푸시 서비스가 새 제안, 답변, 교환 업데이트, 메시지, 후기를 알려 줘요. 메시지 알림은 기기 설정에 따라 잠금 화면에 메시지 내용을 표시해요.</li>
+      <li>알림은 선택 사항입니다. 비공개 메시지 본문 없이 새 메시지와 교환 소식을 알립니다.</li>
     </ul>
   </div>
 
@@ -2032,7 +2032,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>存放在哪里</h3>
     <p>除保留在你设备上的内容外，以上所有信息均由 Apple 存储在 App 的 iCloud CloudKit 容器中。需要让他人看到的内容存放在 App 的共享（公共）数据库中；你的私人设置存放在你的私有 iCloud 数据库中。我们不运营任何自己的服务器。Apple 依据其<a href="https://www.apple.com/legal/privacy/" rel="noopener">隐私政策</a>托管并保护这些数据。</p>
-    <p class="note"><strong>请注意：</strong>提议、消息和交换详情与帖子一起存储在共享数据库中，并且没有端到端加密。App 只向相关的人显示这些内容，但请不要发送任何你不希望他人看到的信息，例如家庭住址或银行信息。</p>
+    <p class="note">消息正文、交换提议备注、见面地点和时间在上传CloudKit前，使用参与者的密钥在设备上加密。私钥保存在iCloud钥匙串中。参与者ID和交换元数据仍保留在公共数据库中。如果密钥尚未同步，私密内容将无法读取，也绝不会以明文发送。 举报会将这条消息发送给管理员。其余对话仍保持私密。</p>
   </div>
 
   <div class="block">
@@ -2045,7 +2045,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>相机</strong>权限仅在你选择为帖子拍摄植物时使用。</li>
       <li><strong>照片</strong>通过 Apple 的照片选择器选取，因此 App 只会收到你选择的图片。上传前，每张照片都会调整尺寸，并移除隐藏的元数据，包括任何 GPS 位置。</li>
-      <li><strong>通知</strong>是可选的。如果你允许，Apple 的推送服务会提醒你新的提议、回复、交换进展、消息和评价。根据你的设备设置，消息通知可能会在锁定屏幕上显示消息内容。</li>
+      <li>通知是可选的。通知会提示新消息和交换进展，但不包含私密消息正文。</li>
     </ul>
   </div>
 
@@ -2130,7 +2130,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
   <div class="block">
     <h3>存放位置</h3>
     <p>除了保留在你裝置上的資料以外，以上所有資料都由 Apple 儲存在 App 的 iCloud CloudKit 容器中。需要讓他人看到的項目存放在 App 的共享（公開）資料庫；你的私人設定存放在你的私人 iCloud 資料庫。我們沒有營運任何自己的伺服器。Apple 依據其<a href="https://www.apple.com/legal/privacy/" rel="noopener">隱私權政策</a>代管並保護這些資料。</p>
-    <p class="note"><strong>請留意：</strong>提案、訊息和交換詳細資料會和刊登一起儲存在共享資料庫中，且沒有端對端加密。App 只會向相關的人顯示這些內容，但請不要傳送任何你不希望別人看到的資訊，例如住家地址或銀行資料。</p>
+    <p class="note">訊息本文、交換提議備註、見面地點和時間在上傳CloudKit前，使用參與者的金鑰在裝置上加密。私密金鑰儲存在iCloud鑰匙圈中。參與者ID和交換中繼資料仍保留在公共資料庫中。如果金鑰尚未同步，私人內容將無法讀取，也絕不會以明文傳送。 檢舉會將這則訊息傳送給管理員。其餘對話仍保持私密。</p>
   </div>
 
   <div class="block">
@@ -2143,7 +2143,7 @@ footer{padding-block:48px 56px;color:var(--ink-2);font-size:13px;display:grid;ga
     <ul>
       <li><strong>相機</strong>權限只會在你選擇為刊登拍攝植物時使用。</li>
       <li><strong>照片</strong>是透過 Apple 的照片選擇器挑選，因此 App 只會收到你選取的照片。上傳前，每張照片都會調整大小，並移除隱藏的後設資料，包括任何 GPS 位置。</li>
-      <li><strong>通知</strong>為選用。如果你允許，Apple 的推播服務會通知你新的提案、回覆、交換進度、訊息和評價。依你的裝置設定而定，訊息通知可能會在鎖定畫面上顯示訊息內容。</li>
+      <li>通知為選用功能。通知會提示新訊息和交換進度，但不包含私人訊息本文。</li>
     </ul>
   </div>
 
