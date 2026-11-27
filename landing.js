@@ -52,7 +52,7 @@ if (document.body.dataset.app === 'propagate') {
   if (/^(privacy|terms|support|addr-|copy-)/.test(key)) {
     location.replace(document.body.dataset.assetPrefix + 'community.html' + location.hash);
   } else {
-    const aliases = {'ru-RU':'ru','en-US':'en','ar-SA':'ar','es-ES':'es','es-MX':'es-419','fr-FR':'fr','de-DE':'de','nl-NL':'nl','no':'nb','sl-SI':'sl'};
+    const aliases = {'ru-RU':'ru','en-US':'en','ar-SA':'ar','es-ES':'es','es-MX':'es-419','fr-FR':'fr','de-DE':'de','nl-NL':'nl','no':'nb','sl-SI':'sl','pt':'pt-BR','in':'id','nn':'nb','zh-TW':'zh-Hant','zh-HK':'zh-Hant','zh-CN':'zh-Hans'};
     const code = aliases[key] || key.replace(/-(?:IN|BD|PK)$/,'');
     const target = [...document.querySelectorAll('.languages a')].find(link => link.lang === code);
     if (target && document.documentElement.lang !== code) location.replace(target.href);
